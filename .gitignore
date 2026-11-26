@@ -4,6 +4,7 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 .coverage
+coverage.xml
 htmlcov/
 
 # Virtual environment
@@ -17,10 +18,10 @@ venv/
 # Environment variables
 .env
 
-# OS
+# OS & Local Databases
 .DS_Store
 *.db
+*.sqlite3
 
 # Reports
 reports/
-.coverage

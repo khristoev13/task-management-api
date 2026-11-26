@@ -20,3 +20,7 @@ venv/
 # OS
 .DS_Store
 *.db
+
+# Reports
+reports/
+.coverage

@@ -31,7 +31,7 @@ jobs:
           mkdir -p reports
           pytest -v \
             --junitxml=reports/junit.xml \
-            --cov \
+            --cov=app \
             --cov-report=term-missing
 
       - name: Upload test report

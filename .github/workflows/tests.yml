@@ -40,3 +40,9 @@ jobs:
         with:
           name: junit-test-report
           path: reports/junit.xml
+
+      - name: Publish Test Report
+        uses: mikepenz/action-junit-report@v5
+        if: always()
+        with:
+          report_paths: "reports/junit.xml"

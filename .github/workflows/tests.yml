@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+  checks: write
+
 jobs:
   test:
     name: Run PyTest Test Suite
@@ -46,3 +50,4 @@ jobs:
         if: always()
         with:
           report_paths: "reports/junit.xml"
+          include_passed: true
